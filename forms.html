@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration form</title>
+</head>
+
+<body>
+    <h1><b><u>STUDENT REGISTRATION FORM</u></b></h1>
+    <form action="" method="post">
+        <table cellspacing="7px">
+            <tr>
+                <td><label for="firstname">FIRST NAME:</label></td>
+                <td><input type="text" size="30px" placeholder="Enter first name" id="firstname" name="f_name" required
+                        maxlength="30"> (max 30 characters A-Z and
+                    a-z) </td>
+            </tr>
+            <tr>
+                <td><label for="lastname">LAST NAME</label></td>
+                <td><input type="text" size="30px" placeholder="Enter last name" id="lastname" required maxlength="30">
+                    (max 30
+                    characters A-Z and a-z)</td>
+            </tr>
+            <tr>
+                <td><label for="dob">DATE OF BIRTH:</label></td>
+                <td><input type="number" id="dob" placeholder="Day">
+                    <select>
+                        <option value="Month">Month</option>
+                        <option value="jan">january</option>
+                        <option value="feb">febrauary</option>
+                        <option value="mar">march</option>
+                        <option value="april">april</option>
+                        <option value="may">may</option>
+                        <option value="june">june</option>
+                        <option value="july">july</option>
+                        <option value="august">august</option>
+                        <option value="sept">september</option>
+                        <option value="oct">october</option>
+                        <option value="november">november</option>
+                        <option value="dec">december</option>
+                    </select>
+                    <input type="number" placeholder="Year">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="emailid">EMAIL ID:</label></td>
+                <td><input type="email" id="emailid" name="emailid"></td>
+            </tr>
+            <tr>
+                <td><label for="mob">MOBILE NO.</label></td>
+                <td><input type="number" id="mob" size="30px" placeholder="Enter mobile no." name="mob_num"> (10 digits
+                    number)</td>
+            </tr>
+            <tr>
+                <td><label>GENDER</label></td>
+                <td><input type="radio" id="gender" name="gender"> Male <input type="radio" name="gender" id="gender">
+                    Female</td>
+            </tr>
+            <tr>
+                <td><label for="address">ADDRESS:</label></td>
+                <td><textarea name="address" id="address" rows="7" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="city">CITY:</label></td>
+                <td><input type="text" id="city" name="city" required size="30px" placeholder="Enter your city name">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pin">PINCODE:</label></td>
+                <td><input type="number" id="pin" name="pin" required placeholder="Enter your city pincode" size="30px">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="state">STATE:</label></td>
+                <td><input type="text" id="state" name="state" required placeholder="Enter your state name" size="30px">
+                    (6 digits number)
+                </td>
+            </tr>
+            <tr>
+                <td><label for="country">COUNTRY</label></td>
+                <td><input type="text" id="country" name="country" required size="30px"
+                        placeholder="Enter your country name"></td>
+            </tr>
+            <tr>
+                <td><label for="hobbies">HOBBIES</label></td>
+                <td><input type="checkbox"> Singing <input type="checkbox"> Dancing <input type="checkbox"> Drawing
+                    <input type="checkbox"> Sketching <br><input type="checkbox"> Others <input type="text"
+                        placeholder="Enter any other hobby" size="20px">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
