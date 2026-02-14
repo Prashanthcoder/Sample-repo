@@ -1,0 +1,39 @@
+h1 {
+    color: blueviolet;
+}
+
+#rod {
+    color: hotpink;
+    background-color: lightgreen;
+}
+
+#meow {
+    color: aliceblue;
+    background-color: aqua;
+}
+
+#arod {
+    color: blanchedalmond;
+    background-color: bisque;
+}
+
+.simple {
+    color: brown;
+    background-color: aquamarine;
+}
+
+h2 {
+    color: azure;
+    background-color: beige;
+}
+
+h3,
+aside,
+nav {
+    color: yellowgreen;
+    background-color: brown;
+}
+
+* {
+    background-color: goldenrod;
+}
