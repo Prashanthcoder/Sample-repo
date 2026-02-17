@@ -1,0 +1,9 @@
+div {
+    height: 500px;
+    width: 1000px;
+    background-color: goldenrod;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 1000px 500px;
+    /* background-attachment: fixed;     */
+}

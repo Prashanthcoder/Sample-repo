@@ -1,0 +1,10 @@
+body {
+    background-color: antiquewhite;
+    background-image: url("bg.jpg");
+    background-size: 2100px 2000px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+hr+h1{
+    color:goldenrod;
+}
