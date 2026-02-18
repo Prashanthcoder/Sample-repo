@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo elements</title>
+    <style>
+        body {
+            background-color: silver;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            background-color: black;
+            color: gold;
+        }
+
+        p::first-letter {
+            color: orange;
+            font-size: 30px;
+        }
+
+        p::first-line {
+            color: aqua;
+        }
+
+        p::after {
+            content: "hello thank you (this is after pseudo element ) 🔥🥹";
+            color: red;
+            font-size: 20px;
+        }
+
+        p::before {
+            content: "🤨 this is before pseudo element";
+            color: red;
+            font-size: 18px;
+        }
+
+        li::marker {
+            font-size: 25px;
+            color: brown;
+        }
+
+        p::selection {
+            color: gold;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo elements selectors</h1>
+    <hr>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ut iste necessitatibus maxime soluta obcaecati
+        perferendis pariatur vitae iure excepturi doloribus mollitia ab dicta eveniet eius, numquam a laboriosam porro
+        id quisquam. Cum, ab deleniti quae quas nisi rem? Expedita velit excepturi consectetur, saepe molestias
+        architecto doloremque nobis enim officiis.
+    </p>
+    <ol>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Banana</li>
+    </ol>
+</body>
+
+</html>
