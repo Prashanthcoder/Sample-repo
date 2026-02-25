@@ -5,6 +5,11 @@ It is created purely for **learning purposes** to understand HTML tags, structur
 
 No CSS, JavaScript, or external frameworks are used in this project.
 
+
+## Deployed link checkout
+
+https://jazzy-centaur-e641fb.netlify.app/
+
 ---
 
 ## Project Overview
