@@ -1,6 +1,6 @@
 nav {
     margin-top: 10px;
-    height: 80px;
+    height: 100px;
     width: 100%;
     background-color: whitesmoke;
     display: flex;
@@ -16,7 +16,7 @@ nav {
     border-radius: 15px;
     border: none;
     background-color: rgb(226, 224, 224);
-    padding: 8px;
+    padding: 10px;
     width: 300px;
     padding-left: 10px;
     outline: none;
@@ -37,7 +37,7 @@ nav {
 #div4 {
     width: 300px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -59,5 +59,79 @@ body {
 #div31>b {
     color: darkblue;
     font-size: 18px;
-    ;
+
+}
+
+#products {
+    height: 250px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#products>div {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#products>div>img:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+#bigimg {
+    width: 100%;
+    height: 300px;
+    background-image: url("https://contents.mediadecathlon.com/s1372711/k$3ff31bc44a555a616e64d54dffc2ea10/defaut.jpg?format=auto&quality=70&f=2520x0");
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+    background-attachment: scroll;
+    transition-property: background-image;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+
+}
+
+#bigimg:hover {
+    background-image: url("https://contents.mediadecathlon.com/s1370674/k$dab33865bb94d2ac3429df897e0cffc6/defaut.jpg?format=auto&quality=70&f=2520x0");
+    cursor: pointer;
+}
+
+#productnew {
+    height: 250px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#productnew>div>img:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+#bigimg2 {
+    width: 100%;
+    height: 300px;
+    background-image: url("https://contents.mediadecathlon.com/s1367574/k$4b9f146d7d9444a34a30cf23df6eb641/defaut.jpg?format=auto&quality=70&f=1800x0");
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+    background-attachment: scroll;
+    transition-property: background-image;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    margin-bottom: 40px;
+}
+
+#bigimg2:hover {
+    background-image: url("https://contents.mediadecathlon.com/s1374193/k$9ec18a488e4c99081951d0f1a937d987/defaut.jpg?format=auto&quality=70&f=1800x0");
+    cursor: pointer;
 }
