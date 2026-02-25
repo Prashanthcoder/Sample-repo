@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classes</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        a:link {
+            color: aqua;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        a:visited {
+            color: red;
+
+        }
+
+        a:hover {
+            color: gold;
+        }
+
+        a:active {
+            color: hotpink;
+        }
+
+        a {
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        div {
+            height: 400px;
+            width: 400px;
+            background-color: blue;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-left: 550px;
+            transition: background-color 0.3s ease, border-radius 0.3s ease, width 0.3s ease;
+
+        }
+
+        div:hover {
+            background-color: lightblue;
+            cursor: pointer;
+            border-radius: 7px;
+            width: 600px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: lightgreen;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease;
+            color: white;
+        }
+
+        button:hover {
+            background-color: darkgray;
+            padding: 15px 25px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dynamic pseudo classes</h1>
+    <br>
+    <hr>
+    <nav>
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://www.instagram.com">Instagram</a>
+    </nav>
+    <div>
+
+    </div>
+    <br>
+    <button>Click me</button>
+</body>
+
+</html>
