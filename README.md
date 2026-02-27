@@ -10,6 +10,10 @@ No CSS, JavaScript, or external frameworks are used in this project.
 
 https://jazzy-centaur-e641fb.netlify.app/
 
+## Deployed the f1 web using hovers
+
+https://fabulous-pavlova-23aaaf.netlify.app/
+
 ---
 
 ## Project Overview
