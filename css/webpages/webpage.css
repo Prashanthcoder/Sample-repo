@@ -3,7 +3,7 @@ header {}
 nav {
     height: 80px;
     width: 100vw;
-    background-color: rgb(25, 21, 21);
+    background-color: rgb(15, 23, 42);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -45,7 +45,7 @@ nav>div:nth-child(3)>input:hover {
 main {
     height: 200vh;
     width: 100vw;
-    background-color: rgb(85, 94, 94);
+    background-color: rgb(30, 41, 59);
     position: relative;
     display: flex;
     justify-content: center;
