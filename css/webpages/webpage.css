@@ -1,7 +1,4 @@
-header {
-    position: sticky;
-    top: 0;
-}
+header {}
 
 nav {
     height: 80px;
@@ -10,6 +7,10 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
 }
 
 div:nth-child(2) {
@@ -30,24 +31,104 @@ a {
 
 nav>div:nth-child(3)>input {
     outline: none;
-    padding: 5px;
+    padding: 7px;
     padding-left: 10px;
     border-radius: 20px;
-    width: 200px;
+    width: 250px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+nav>div:nth-child(3)>input:hover {
+    box-shadow: 0px 0px 5px 3px white;
 }
 
 main {
-    height: 90vh;
+    height: 200vh;
     width: 100vw;
     background-color: rgb(85, 94, 94);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
+
 }
 
-main>div {
-    width: 70vw;
-    height: 60vh;
+main>div:first-child {
+    width: 30vw;
+    height: 100vh;
     background-color: gray;
+    border-radius: 20px;
+    background-image: url("https://i.pinimg.com/1200x/ce/f5/98/cef5986c4484fa316464313ffd115b12.jpg");
+    background-size: 30vw 100vh;
+    position: absolute;
+    top: 250px;
+    left: 15%;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s linear, left 0.5s ease-in-out;
+}
+
+main>div:first-child:hover {
+    background-image: url("https://i.pinimg.com/736x/e0/49/26/e0492635732f906212e2c9e7feff06a3.jpg");
+    background-size: 30vw 100vh;
+    box-shadow: 0px 0px 10px 5px white;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 40px;
+}
+
+main>div:nth-child(2) {
+    width: 30vw;
+    height: 100vh;
+    background-color: gray;
+    border-radius: 20px;
+    background-image: url("https://i.pinimg.com/1200x/f5/72/b2/f572b2c90cfa85ecb9bf96129bb275c4.jpg");
+    background-size: 30vw 100vh;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 15%;
+    top: 250px;
+    transition: background-image 0.5s linear, right 0.5s ease-in-out;
+}
+
+main>div:nth-child(2):hover {
+    background-image: url("https://i.pinimg.com/736x/92/3e/4f/923e4fd294c03212ff61ddd60ee71926.jpg");
+    background-size: 30vw 100vh;
+    box-shadow: 0px 0px 10px 5px white;
+    position: absolute;
+    right: 40px;
+}
+
+main>p {
+
+    font-size: 30px;
+    color: black;
+}
+
+main>h1 {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    font-size: 40px;
+    transform: translateX(-50%);
+    color: rgb(146, 16, 16);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0px 0px 5px white;
+    transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+}
+
+main>h1::after {
+    content: " Click on the posters to know more!";
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Show the extra text on hover */
+main>h1:hover::after {
+    opacity: 2;
+}
+
+main>h1:hover {
+    text-shadow: 0px 0px 10px 5px white;
+    color: darkred;
 }
