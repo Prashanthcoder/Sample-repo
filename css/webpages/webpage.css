@@ -1,0 +1,53 @@
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    height: 80px;
+    width: 100vw;
+    background-color: rgb(25, 21, 21);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div:nth-child(2) {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+* {
+    margin: 0;
+}
+
+nav>div:nth-child(3)>input {
+    outline: none;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 20px;
+    width: 200px;
+}
+
+main {
+    height: 90vh;
+    width: 100vw;
+    background-color: rgb(85, 94, 94);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>div {
+    width: 70vw;
+    height: 60vh;
+    background-color: gray;
+}
