@@ -43,7 +43,7 @@ nav>div:nth-child(3)>input:hover {
 }
 
 main {
-    height: 200vh;
+    height: 500vh;
     width: 100vw;
     background-color: rgb(30, 41, 59);
     position: relative;
@@ -65,16 +65,18 @@ main>div:first-child {
     top: 250px;
     left: 15%;
     background-repeat: no-repeat;
-    transition: background-image 0.5s linear, left 0.5s ease-in-out;
+    transition: background-image 0.5s linear, transform 0.5s linear, right 0.5s linear;
 }
 
 main>div:first-child:hover {
-    background-image: url("https://i.pinimg.com/736x/e0/49/26/e0492635732f906212e2c9e7feff06a3.jpg");
+    background-image: url("https://i.pinimg.com/474x/22/7c/8f/227c8f6e1610d449b769ae74c8aa5fe7.jpg");
     background-size: 30vw 100vh;
     box-shadow: 0px 0px 10px 5px white;
     background-repeat: no-repeat;
-    position: absolute;
-    left: 40px;
+    transform: translate(200px, 200px);
+    transform: skew(20deg);
+    transform: rotate(-90deg);
+
 }
 
 main>div:nth-child(2) {
@@ -82,21 +84,23 @@ main>div:nth-child(2) {
     height: 100vh;
     background-color: gray;
     border-radius: 20px;
-    background-image: url("https://i.pinimg.com/1200x/f5/72/b2/f572b2c90cfa85ecb9bf96129bb275c4.jpg");
+    background-image: url("https://i.pinimg.com/736x/8c/90/de/8c90de3a6b92398f6d0c0dca601b91c7.jpg");
     background-size: 30vw 100vh;
     background-repeat: no-repeat;
     position: absolute;
     right: 15%;
     top: 250px;
-    transition: background-image 0.5s linear, right 0.5s ease-in-out;
+    transition: background-image 0.5s linear, transform 1s ease;
 }
 
 main>div:nth-child(2):hover {
-    background-image: url("https://i.pinimg.com/736x/92/3e/4f/923e4fd294c03212ff61ddd60ee71926.jpg");
+    background-image: url("https://i.pinimg.com/1200x/24/ed/f8/24edf845cdac54f390db0579e979106d.jpg");
     background-size: 30vw 100vh;
     box-shadow: 0px 0px 10px 5px white;
-    position: absolute;
-    right: 40px;
+    transform: translate(-200px, 200px);
+    transform: skew(20deg);
+    transform: rotate(-90deg);
+
 }
 
 main>p {
