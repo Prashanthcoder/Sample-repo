@@ -1,94 +1,75 @@
-# PUMA Static Website (HTML Only)
+# 🌐 Web Technology Learning Repository
 
-This project is a simple static website built using **only HTML**.  
-It is created purely for **learning purposes** to understand HTML tags, structure, and basic web page layout.
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
-No CSS, JavaScript, or external frameworks are used in this project.
+Welcome to my structured learning journey! This repository documents my transition from **HTML5 fundamentals** to **advanced CSS3 styling**, including the box model, positioning, and interactive transitions.
 
-
-## Deployed link checkout
-
-https://jazzy-centaur-e641fb.netlify.app/
-
-## Deployed the f1 web using hovers
-
-https://fabulous-pavlova-23aaaf.netlify.app/
+The goal of this project is to master the "hard way"—writing every line of code manually to understand how the web works under the hood.
 
 ---
 
-## Project Overview
+## 🚀 Live Deployments
 
-The website is a basic representation of a PUMA-themed page that includes:
-- A homepage with brand title and navigation text
-- Separate pages for Boys and Girls collections
-- A social media links page
-- Images, tables, links, and basic formatting using HTML elements
+Experience the progress firsthand through these live demos:
 
-The focus of this project is to **learn what each HTML tag does and why it is used**, not on design or styling.
-
----
-
-## Technologies Used
-
-- HTML5 only
+| Project | Tech Stack | Preview Link |
+| :--- | :--- | :--- |
+| **PUMA Static Clone** | HTML5 | [View Project](https://jazzy-centaur-e641fb.netlify.app/) |
+| **F1 Interactive Web** | HTML5 + CSS3 (Hovers) | [View Project](https://fabulous-pavlova-23aaaf.netlify.app/) |
 
 ---
 
-## Pages Included
+## 📂 Repository Structure
 
-- `index.html`  
-  Main homepage with PUMA branding and links to collections
+### 🏗️ Core HTML Practice
+Focusing on semantic structure, data organization, and user input.
 
-- `boys.html`  
-  Boys collection page (linked from the homepage)
+* **Forms & Validation:** `registration.html`, `forms.html`, `log.html`
+* **Data Structures:** `exam_table.html`, `form_table.html`, `lists.html`
+* **Layout Basics:** `index.html`, `swiggy_feb12.html`, `airindia.html`
+* **Thematic Pages:** `puma.html`, `nonveg.html`, `boys.html`, `girls.html`
 
-- `girls.html`  
-  Girls collection page displaying product images in a table layout
+### 🎨 CSS Learning Modules
+Dedicated folders for deep-diving into specific styling concepts.
 
-- `social.html`  
-  Page containing social media icons and external links (Instagram, Facebook, Twitter, LinkedIn)
-
----
-
-## Key HTML Concepts Practiced
-
-- Document structure (`<!DOCTYPE>`, `<html>`, `<head>`, `<body>`)
-- Headings and text formatting
-- Images and links
-- Tables for layout
-- Centering content
-- Internal and external navigation
-- Target attributes for opening links in new tabs
+* 📁 **Box-Model:** Mastering margins, padding, and borders.
+* 📁 **Positioning:** Static, Relative, Absolute, and Fixed layouts.
+* 📁 **Typography:** Advanced text-properties and formatting.
+* 📁 **Interactive UI:** Pseudo-classes, hover states, and dynamic behavior.
+* 📁 **Clones:** Real-world UI recreation (e.g., Decathlon Clone).
 
 ---
 
-## Purpose of This Project
+## 🧠 Concepts Mastered
 
-- To learn HTML step by step
-- To understand the role of each tag
-- To build confidence before moving to CSS
-- To avoid copy-pasting and write code manually
+### **HTML5**
+- **Semantics:** Using the right tags for the right job.
+- **Media:** Integrating images and internal/external linking.
+- **Data Entry:** Complex form structures and input types.
+- **Tables:** Managing tabular data with nested structures.
 
-This project is intentionally kept **simple and static**.
-
----
-
-## Future Plans
-
-- Learn CSS after completing HTML fundamentals
-- Improve layout and styling using CSS
-- Make the website more structured and visually appealing
-- Gradually move towards responsive design
+### **CSS3**
+- **The Box Model:** Complete control over element spacing.
+- **Layouts:** Mastering `div` nesting and positioning strategies.
+- **Design:** Background properties, combinators, and selectors.
+- **UX/UI:** CSS Transitions, transformations, and navigation bar architecture.
 
 ---
 
-## Disclaimer
+## 🛠️ Learning Methodology
 
-This project is **not affiliated with PUMA**.  
-All brand names and images are used strictly for educational practice.
+> "Understanding code by writing code."
+
+1.  **Zero Templates:** Every layout is built from scratch without external frameworks.
+2.  **Isolated Practice:** Each concept is tested in a dedicated file before being integrated.
+3.  **Real-World Reverse Engineering:** Recreating layouts from Swiggy, PUMA, and Air India to understand professional design thinking.
 
 ---
 
-## Author
+## 📝 Disclaimer
+This repository is strictly for **educational purposes**. Brand names and layout recreations are used solely for practice and personal skill development.
 
-Created by a learner who is currently focusing on mastering HTML fundamentals.
+---
+**Maintained by [Your Name/Username]** *Let's build a stronger web, one line at a time.*
