@@ -16,7 +16,7 @@ Experience the progress firsthand through these live demos:
 
 | Project | Tech Stack | Preview Link |
 | :--- | :--- | :--- |
-| **PUMA Static Clone** | HTML5 | [View Project](https://jazzy-centaur-e641fb.netlify.app/) |
+| **Decathelon Static Clone** | HTML5 | [View Project](https://jazzy-centaur-e641fb.netlify.app/) |
 | **F1 Interactive Web** | HTML5 + CSS3 (Hovers) | [View Project](https://fabulous-pavlova-23aaaf.netlify.app/) |
 
 ---
