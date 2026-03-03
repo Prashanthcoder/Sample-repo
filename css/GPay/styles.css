@@ -1,0 +1,50 @@
+nav{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+}
+*{
+    margin: 0;
+
+}
+nav>div:nth-child(1)>input{
+    position: absolute;
+    padding: 10px 180px;
+    border-radius: 20px;
+    background-color: gray;
+    outline: none;
+    left: 200px;
+    top:11px;
+}
+nav>div:nth-child(2){
+    height: 35px;
+    width: 35px;
+    background-color:purple;
+    border-bottom: 4px solid green;
+                border-left:4px solid hotpink; 
+                border-top: 4px solid red;
+                border-right: 4px solid blue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    position: relative;
+    left: 100px;
+
+}
+::placeholder{
+    color: white;
+    font-size: 17px;
+}
+.fa-lg{
+    position: absolute;
+    left: 260px;
+    top: 28px;
+}
+p{
+    font-size: 20px;
+}
