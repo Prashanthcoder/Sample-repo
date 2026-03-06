@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grids</title>
+    <style>
+        body {
+            background-color: darkorange;
+        }
+
+        h1 {
+            text-decoration: underline;
+            text-transform: uppercase;
+            text-align: center;
+            text-shadow: 5px 5px 5px gray;
+        }
+
+        body>div:nth-child(3) {
+            background-color: black;
+            height: 700px;
+            display:grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 50px 50px;
+            column-gap: 7px;
+            row-gap: 10px;
+            grid-template-areas: "hdr hdr hdr"
+                                 "hdr1 hdr1 hdr1"
+                                 "sct sct aside"
+                                 "sct1 sct2 asd"
+                                 "sct3 asd1 asd1"
+                                 "ftr ftr ftr";
+        }
+        body>div>div{
+             border-radius: 25px;
+             border: 5px solid red;
+            animation-name: borders;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: 1;
+            animation-delay: 0s;
+            transform: rotate(10deg);
+        }
+        @keyframes borders {
+            from{
+                border: 5px solid red;
+                transform: rotate(10deg);
+
+                
+            }
+            to{
+                border-top: 5px solid blue;;
+                border-bottom: 5px solid green;
+                border-right: 5px solid orange;
+                border-left: 5px solid lightblue;
+                transform: rotate(0);
+                
+                
+                
+                
+            }
+            
+        }
+        body>div:nth-child(3)>div:nth-child(1) {
+
+            background-color: beige;
+            grid-area: hdr;
+           
+
+        }
+
+        body>div:nth-child(3)>div:nth-child(2) {
+            background-color: beige;
+            grid-area: hdr1;
+            
+
+        }
+
+        body>div:nth-child(3)>div:nth-child(3) {
+            background-color: beige;
+            grid-area:sct;
+
+        }
+
+        body>div:nth-child(3)>div:nth-child(4) {
+            background-color: beige;
+            grid-area: aside;
+            
+
+        }
+
+        body>div:nth-child(3)>div:nth-child(5) {
+            background-color: beige;
+            grid-area: sct1;
+
+        }
+
+        body>div:nth-child(3)>div:nth-child(6) {
+            background-color: beige;
+            grid-area: sct2;
+
+        }
+
+        body>div:nth-child(3)>div:nth-child(7) {
+            background-color: beige;
+            grid-area: asd;
+           
+
+        }
+
+        body>div:nth-child(3)>div:nth-child(8) {
+            background-color: beige;
+            grid-area: sct3;
+         
+
+        }
+
+        body>div:nth-child(3)>div:nth-child(9) {
+            background-color: beige;
+            grid-area: asd1;
+           
+
+        }
+
+        body>div:nth-child(3)>div:nth-child(10) {
+            background-color: beige;
+            grid-area: ftr;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grids in css</h1>
+    <hr>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
