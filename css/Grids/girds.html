@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            margin-left: 200px;
+        }
+
+        body>div:nth-child(1) {
+            height: 650px;
+            width: 80%;
+            background-color: rgb(247, 171, 72);
+            border: 2px solid red;
+            display: grid;
+            justify-content: space-evenly;
+            grid-template-columns: 19.5% 19.5% 19.5% 19.5%;
+            grid-template-rows: 90px 90px 90px 90px 90px 90px;
+            gap: 20px 0px;
+            padding-top: 7px;
+            border-radius: 20px;
+            grid-template-areas:
+                "tl tl2 tl3 tr"
+                "tl tl5 tl3 tr"
+                "tl7 tl5 tl3 tl8"
+                "tl9 tl5 ac tl8"
+                "tl9 tl5 ac bc"
+                "tl9 tl5 ac bc";
+
+        }
+
+        body>div:nth-child(1)>div:nth-child(1) {
+            background-color: white;
+            grid-area: tl;
+            border-radius: 10px;
+            background-image: url("https://i.pinimg.com/736x/6c/5b/70/6c5b703b0c048b700dbe13ca00eb15b9.jpg");
+            background-size: 100% 100%;
+        }
+
+        body>div:nth-child(1)>div:nth-child(2) {
+            background-color: white;
+            grid-area: tl2;
+            border-radius: 10px;
+            background-image: url("https://i.pinimg.com/736x/83/61/8f/83618f38a393a700278411af297cb243.jpg");
+            background-size: 100% 100%;
+
+        }
+
+        body>div:nth-child(1)>div:nth-child(3) {
+            background-color: white;
+            grid-area: tl3;
+            border-radius: 10px;
+            padding-left: 5px;
+            padding-top: 0px;
+            font-size: 28px;
+            text-align:justify;
+        }
+
+        body>div:nth-child(1)>div:nth-child(4) {
+            background-color: white;
+            grid-area: tr;
+            border-radius: 10px;
+            background-image: url("https://i.pinimg.com/736x/61/ef/29/61ef296c3c8bcab3ef9bc026bc4de537.jpg");
+            background-size: 100% 100%;
+        }
+
+        body>div:nth-child(1)>div:nth-child(5) {
+            background-color: white;
+            grid-area: tl5;
+            border-radius: 10px;
+            padding-left: 3px;
+            font-size: 24px;
+        }
+
+        body>div:nth-child(1)>div:nth-child(6) {
+            background-color: white;
+            grid-area: tl7;
+            border-radius: 10px;
+            background-image: url("https://i.pinimg.com/1200x/d5/f2/5c/d5f25c266a4914721fcec0164f20e1f9.jpg");
+            background-size: 100% 100%;
+        }
+
+        body>div:nth-child(1)>div:nth-child(7) {
+            background-color: white;
+            grid-area: tl8;
+            border-radius: 10px;
+            background-image: url("https://i.pinimg.com/736x/97/92/17/979217f389425a059327a56ca5fce85e.jpg");
+            background-size: 100% 100%;
+        }
+
+        body>div:nth-child(1)>div:nth-child(8) {
+            background-color: white;
+            grid-area: tl9;
+            border-radius: 10px;
+            background-image: url("https://i.pinimg.com/736x/c9/fa/3f/c9fa3fc6fd53c8597f94a14b5e5f6261.jpg");
+            background-size: 100% 100%;
+        }
+
+        body>div:nth-child(1)>div:nth-child(9) {
+            background-color: white;
+            grid-area: ac;
+            border-radius: 10px;
+            background-image: url("https://i.pinimg.com/736x/1d/ba/fd/1dbafd6bfd6045376e91599d3e0b758a.jpg");
+            background-size: 100% 100%;
+        }
+
+        body>div:nth-child(1)>div:nth-child(10) {
+            background-color: white;
+            grid-area: bc;
+            border-radius: 10px;
+            background-image: url("https://i.pinimg.com/736x/c6/23/5c/c6235c3be14599c304582ec925a461f1.jpg");
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div></div>
+        <div></div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolores, doloremque aliquam voluptatibus ea
+            asperiores debitis aliquid laborum delectus quos veritatis optio, incidunt corporis officia nulla maiores
+            at. Id, sequi.</div>
+        <div></div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptates nisi commodi deserunt. Dolorem
+            excepturi nemo at ducimus, quo aliquam neque explicabo, officia aspernatur qui nihil molestias harum,
+            provident non. Sunt impedit vel error ipsa quos, est officia ipsam voluptatum reprehenderit modi provident,
+            minus consequatur possimus iste eum autem. Sapiente!</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
