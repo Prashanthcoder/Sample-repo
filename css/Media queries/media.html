@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        @media screen and (min-width: 0px) and (max-width: 468px) {
+                body{
+                    background-color: lightgoldenrodyellow;
+                }
+                p{
+                    width: 50%;
+                    font-size: 7px;
+                    color: orange;
+                }
+                h1{
+                    font-size: 12px;
+
+                }
+                h1::after{
+                    content:"Mobile Website";
+                }
+        }
+        @media screen and (469px<=width<=769px){
+            body{
+                background-color: lightgreen;
+            }
+        }
+        @media screen and (770px<=width<=1069px){
+            body{
+                background-color: blanchedalmond ;
+            }
+        }
+        @media screen and (1070px <=width){
+            body{
+                background-color: black;
+            }
+            p{
+                color: white;
+                font-size: 12px;
+                text-align: justify;
+            }
+            h1{
+                color: gold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsiveness for </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis est, ullam vel veritatis corporis necessitatibus atque qui ipsa fugiat voluptas non distinctio velit nostrum id quo officiis facere deserunt eaque labore quidem voluptate. Reiciendis exercitationem nobis aliquam ratione quibusdam maxime est? Nisi inventore iste cum incidunt id commodi eligendi ipsum quaerat, illum aspernatur et voluptates perspiciatis doloremque ducimus fuga obcaecati ut enim vitae! Rerum sit laboriosam cumque at reprehenderit veritatis sapiente ipsa! Omnis sint assumenda autem minima, natus, doloribus accusamus repellat fugiat qui sed sunt nemo debitis, magnam similique ducimus eligendi eum. Reprehenderit, numquam totam? Dicta officia laboriosam consequatur aspernatur laudantium aut repellat amet eum, facere dignissimos, cumque magni et culpa aliquid natus id ex in neque qui. Non, laboriosam quos a velit soluta reprehenderit impedit magni asperiores perferendis maxime hic sequi dicta veritatis, dolorem sint incidunt obcaecati? Consequuntur nulla dolore vitae blanditiis ad provident aspernatur in ullam reprehenderit magni? Reiciendis at excepturi, laudantium tempore voluptatem vitae nisi eaque deserunt, dignissimos voluptatum voluptatibus? Est iure odio assumenda. Sed, in? Soluta iste magnam placeat sit consequuntur autem beatae quo distinctio tempora minima magni sint hic perferendis inventore quod explicabo odio nobis ab quam totam numquam, qui a! Doloribus, sint rerum?</p>
+</body>
+</html>
