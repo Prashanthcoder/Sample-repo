@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        section{
+            height: 40vh;
+            width: 100vw;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        section>div>div:nth-child(2)>p{
+            width: 30vw;
+        }
+        @media screen and (0px<=width<=468px){
+            section>div:nth-child(1){
+                flex-direction: column;
+            }
+            section>div>div:nth-child(2)>p{
+                color: red;
+                width: 90%;
+                text-align: justify;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <div>
+                <img src="https://images.unsplash.com/photo-177242126046-29faff1ad234" alt="random image" height="50px" width="500px">
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda reiciendis nam, rerum molestiae incidunt fugit deleniti neque omnis ab fugiat veritatis dolorum, eum pariatur aliquam. Laudantium inventore aut quasi? Sint repellendus, natus aliquid odit, laborum atque ut, adipisci alias voluptatum tempore omnis ab distinctio ipsam magni facilis error veniam laudantium unde labore. Distinctio ratione consequuntur nostrum sequi expedita non et repellat. Quia assumenda voluptatem minima deserunt necessitatibus accusamus, ipsam provident saepe officia, quaerat amet, earum unde iusto! Recusandae inventore iure itaque consequuntur voluptate dolor et voluptatum ipsam, fugiat quisquam laboriosam enim dolore qui aperiam culpa, maiores deleniti impedit numquam veniam.</p>
+                <button>click</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
