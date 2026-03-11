@@ -1,0 +1,79 @@
+<!-- we have the speciticity : it is used to change the priority of simple selectors by giving !important -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css specificity</title>
+    <style>
+        p{
+            color: red;
+        }
+        #spec{
+            color: blue;
+        }
+        .demo{
+            color: brown !important;
+        }
+        section{
+            font-size: 29px;
+            /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-weight: bolder; 
+        }
+        section:nth-child(10){
+            height:300px;
+            width: 100%;
+            background-color: black;
+            position: relative;
+        }
+        section:nth-child(10)>div:nth-child(1){
+            height: 100px;
+            width: 300px;
+            background-color: rgb(255,0,0);
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: 90;
+        }
+        section:nth-child(10)>div:nth-child(2){
+            height:100px;
+            width: 300px;
+            background-color: rgb(0,255,0);
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: 6;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS specificity</h1>
+    <h2>answer: it is used to change the prority of simple selectors by giving !important is called css specificity.
+
+    </h2>
+    <p id="spec" class="demo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam enim eaque atque est consequatur aliquid deserunt inventore, perspiciatis repellendus cum aut adipisci mollitia explicabo, sunt nam necessitatibus itaque quos voluptatibus.</p>
+    <hr>
+    <h1>font properties</h1>
+    <section>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto est quasi, obcaecati labore veritatis optio ad ea quidem molestias commodi eveniet, maxime repudiandae, culpa mollitia deserunt! Dolorem distinctio perferendis amet?
+        Vel, sequi. Autem, blanditiis? Quos maxime harum beatae? Rem unde a dicta reprehenderit! Unde error sunt voluptatum, atque aut, laborum hic dolorum ipsam quae omnis nobis. Odit dolorem perferendis quaerat?
+        Explicabo at numquam, vero totam esse eaque quas deleniti tenetur rerum nihil id obcaecati, dolor dolores beatae libero ex quos voluptatibus accusamus quia suscipit eligendi alias repellat quo pariatur. Voluptate.
+        Molestias atque officia debitis nisi suscipit explicabo vero aliquam quos omnis. Earum quod ab veritatis alias doloremque cumque dignissimos eveniet blanditiis a, laborum voluptatibus maxime eaque. Iusto qui tempora quis.
+        Eum odit, sint nulla, temporibus placeat quos atque labore ut consectetur asperiores deserunt impedit autem quaerat molestiae optio. Aut, dolores nihil! Exercitationem sit molestiae consectetur, ab aspernatur eaque error nesciunt.
+    </section>
+    <hr>
+    <h1>Z-index</h1>
+    <h2>Answer: Z-index is  a css property which is used arange the elements in stack order which element has higher z-index value will appear first comparte to the element, which has less z-index value z-index words with only positions</h2>
+    <section>
+        <div></div>
+        <div></div>
+    </section>
+    <hr>
+    <h1>Colors</h1>
+    which has a lesser will go to index guys. 
+</body>
+
+</html>
