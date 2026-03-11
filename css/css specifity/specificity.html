@@ -1,0 +1,127 @@
+<!-- we have the speciticity : it is used to change the priority of simple selectors by giving !important -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css specificity</title>
+    <style>
+        p{
+            color: red;
+        }
+        #spec{
+            color: blue;
+        }
+        .demo{
+            color: brown !important;
+        }
+        section{
+            font-size: 29px;
+            /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-weight: bolder; 
+        }
+        section:nth-child(10){
+            height:300px;
+            width: 100%;
+            background-color: black;
+            position: relative;
+        }
+        section:nth-child(10)>div:nth-child(1){
+            height: 100px;
+            width: 300px;
+            background-color: rgb(255,0,0);
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: 90;
+        }
+        section:nth-child(10)>div:nth-child(2){
+            height:100px;
+            width: 300px;
+            background-color: rgb(0,255,0);
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: 6;
+        }
+        /* hexa (a-f) and (0-9) we can pass to this type of color combination */
+        h5{
+            color: #000;
+        }
+        /* rgb(0-255) */
+        h5{
+            height: 200px;
+            color: rgb(0, 120, 150);
+            background-color: gray;
+            opacity: 0.5;
+        }
+        /* opacity is used to control the transparency of an element */
+
+        /* display properties which is used to convert inline to block and block to inline either way also we
+        can try the inline elements wont respond to height and width inorder make it like block but not completely block
+        we make use something called inline-block */
+        h4{
+            height:100px;
+            background-color: red;
+            display: inline;/* converting from block to inline*/
+        }
+        span{
+                background-color: yellow;
+                height: 100px;
+                display: block;/*
+                converting from inline to block */
+        }
+#span2{
+    height: 20px;
+    background-color: orange;
+    display:inline-block;/* converting from inline to block but not completely block */
+    width: 400px;
+    
+}
+    </style>
+</head>
+
+<body>
+    <h1>CSS specificity</h1>
+    <h2>answer: it is used to change the prority of simple selectors by giving !important is called css specificity.
+
+    </h2>
+    <p id="spec" class="demo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam enim eaque atque est consequatur aliquid deserunt inventore, perspiciatis repellendus cum aut adipisci mollitia explicabo, sunt nam necessitatibus itaque quos voluptatibus.</p>
+    <hr>
+    <h1>font properties</h1>
+    <section>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto est quasi, obcaecati labore veritatis optio ad ea quidem molestias commodi eveniet, maxime repudiandae, culpa mollitia deserunt! Dolorem distinctio perferendis amet?
+        Vel, sequi. Autem, blanditiis? Quos maxime harum beatae? Rem unde a dicta reprehenderit! Unde error sunt voluptatum, atque aut, laborum hic dolorum ipsam quae omnis nobis. Odit dolorem perferendis quaerat?
+        Explicabo at numquam, vero totam esse eaque quas deleniti tenetur rerum nihil id obcaecati, dolor dolores beatae libero ex quos voluptatibus accusamus quia suscipit eligendi alias repellat quo pariatur. Voluptate.
+        Molestias atque officia debitis nisi suscipit explicabo vero aliquam quos omnis. Earum quod ab veritatis alias doloremque cumque dignissimos eveniet blanditiis a, laborum voluptatibus maxime eaque. Iusto qui tempora quis.
+        Eum odit, sint nulla, temporibus placeat quos atque labore ut consectetur asperiores deserunt impedit autem quaerat molestiae optio. Aut, dolores nihil! Exercitationem sit molestiae consectetur, ab aspernatur eaque error nesciunt.
+    </section>
+    <hr>
+    <h1>Z-index</h1>
+    <h2>Answer: Z-index is  a css property which is used arange the elements in stack order which element has higher z-index value will appear first comparte to the element, which has less z-index value z-index words with only positions</h2>
+    <section>
+        <div></div>
+        <div></div>
+    </section>
+    <hr>
+    <h1>Colors</h1>
+    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab distinctio aliquam deleniti consequuntur quos nam ipsa accusamus reiciendis. Sit provident ducimus pariatur, beatae reprehenderit necessitatibus illum nobis deleniti libero amet.
+    Iure omnis illum sed ad. Adipisci, accusamus a. Expedita ducimus, totam ipsum ullam dicta nesciunt molestias quisquam doloremque unde hic fugiat sapiente, eos, quasi minus tenetur quae nostrum! Laboriosam, exercitationem?
+    Excepturi numquam, nemo, rem vel assumenda dolor neque in eos, fuga laborum sapiente sunt distinctio quis ullam quibusdam amet ea. Commodi eum consectetur placeat repellendus ducimus eveniet cumque et laboriosam!
+    Quisquam, similique enim! Magnam, dolorem? Esse perspiciatis molestiae dolores, rerum mollitia commodi sunt! Hic cupiditate explicabo nam sunt quam, expedita, voluptates maxime beatae, facere ullam placeat ratione nostrum consectetur in?
+    Neque saepe pariatur soluta veritatis nam dolore eum beatae? Blanditiis ea similique officiis quam veniam totam aspernatur nam temporibus aliquam sit soluta, voluptas culpa corporis nemo commodi saepe doloremque? Aliquam.</h5> 
+    <hr>
+    <h1> Display properties</h1>
+    <h4>Lorem ipsum dolor sit.</h4>
+    <hr>
+    <span>Lorem ipsum dolor sit.</span>
+
+
+    <h3>Lorem ipsum dolor sit amet <span id="span2">consectetur adipisicing</span> elit. Ducimus corrupti beatae exercitationem at ad molestias aperiam necessitatibus nam enim ea repudiandae esse id, rem quos laboriosam quisquam pariatur iste! Officia!
+    Repellat eos omnis neque sed laborum saepe minima vel. Temporibus totam voluptates quo autem accusamus, maxime atque quae eveniet blanditiis, ex ullam aut non necessitatibus. Fuga exercitationem ullam tenetur blanditiis?
+    Placeat, ea et dicta non odit ad ex, dolores dignissimos neque rerum ducimus porro nihil veniam dolorum tempora ullam aut voluptatum aspernatur a eveniet fugit voluptates cupiditate vel? Neque, nihil?</h3>
+</body>
+
+</html>
