@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient in css</title>
+    <style>
+        body>h1 {
+            text-align: center;
+        }
+
+        body>div:nth-child(4) {
+            height: 300px;
+            width: 100%;
+            background-image: linear-gradient(to top left, aqua, black)
+        }
+
+        body>div:nth-child(6) {
+            height: 300px;
+            width: 100%;
+            background-image: repeating-linear-gradient(to top left, white 0%, white 5%, black 5%, black 10%);
+        }
+
+        body>div:nth-child(8) {
+            height: 300px;
+            width: 100%;
+            background-image: radial-gradient(white, black);
+        }
+
+        body>div:nth-child(10) {
+            height: 300px;
+            width: 100%;
+            background-image: repeating-radial-gradient(orange 0%, orange 10%, 10%, gray 20%);
+        }
+
+        body>div:nth-child(12) {
+            height: 300px;
+            width: 100%;
+            background-image: conic-gradient(white, red, green, blue, orange);
+        }
+
+        body>div:nth-child(14) {
+            height: 300px;
+            width: 100%;
+            background-image: repeating-conic-gradient(white 0%, white 5%, black 5%, black 10%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gradient in CSS</h1>
+    <hr>
+    <h2>Linear Gradient</h2>
+    <div></div>
+    <hr>
+    <div></div>
+    <hr>
+    <div></div>
+    <hr>
+    <div></div>
+    <hr>
+    <div></div>
+    <hr>
+    <div></div>
+    <hr>
+    <div></div>
+</body>
+
+</html>
