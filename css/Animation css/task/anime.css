@@ -1,0 +1,238 @@
+div:nth-child(1) {
+    width: 90vw;
+    height: 95vh;
+    background-color: lightblue;
+    position: absolute;
+    left: 50px;
+}
+
+div:nth-child(1) div {
+    width: 90vw;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div:nth-child(1)>div:nth-child(1)>div {
+    width: 90vw;
+    color: white;
+    font-size: 60px;
+
+}
+
+div>img:nth-child(3) {
+    position: absolute;
+    left: 900px;
+    top: 30px;
+    animation-name: fly;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes fly {
+    from {
+        left: 900px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+#clouds {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    animation-name: cloudmove;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cloudmove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 900px;
+    }
+}
+
+#clouds1 {
+    position: absolute;
+    left: 350px;
+    top: 5px;
+    animation-name: cloudmove1;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cloudmove1 {
+    from {
+        left: 350px;
+    }
+
+    to {
+        left: 1250px;
+    }
+}
+
+#idcar {
+    position: absolute;
+    left: 1000px;
+    bottom: 0px;
+    animation-name: carmove;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes carmove {
+    from {
+        left: 1000px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+#idtruck {
+    position: absolute;
+    left: 0px;
+    bottom: 100px;
+    animation-name: truckmove;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes truckmove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 1000px;
+    }
+}
+
+#idbike {
+    position: absolute;
+    left: 900px;
+    bottom: 110px;
+    animation-name: bikemove;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes bikemove {
+
+    0% {
+        left: 900px;
+    }
+
+    25% {
+        left: 1200px;
+
+
+    }
+
+    50% {
+        bottom: 30px;
+        transform: scalex(-1);
+    }
+
+    75% {
+        bottom: 30px;
+        left: 800px;
+    }
+
+    /* 0% {
+        position: relative;
+        left: 900px;
+    }
+
+    25% {
+        position: relative;
+        left: 1200px;
+    }
+    50%{
+        position: relative;
+        left: 900px;
+    } */
+}
+
+#idocean {
+    position: absolute;
+    right: 0px;
+    bottom: 200px;
+}
+
+#idship {
+    position: absolute;
+    right: 0px;
+    bottom: 220px;
+    animation-name: shipmove;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes shipmove {
+    from {
+        right: 0px;
+    }
+
+    to {
+        right: 700px;
+    }
+}
+
+#idsun {
+    position: absolute;
+    left: 0px;
+    bottom: 200px;
+    animation-name: sunmove;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#idbirds {
+    position: absolute;
+    right: 10px;
+    top: 200px;
+    animation-name: birdmove;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes birdmove {
+    from {
+        right: 10px;
+    }
+
+    to {
+        right: 1000px;
+    }
+}
+
+#idsuns {
+    position: absolute;
+    right: 0px;
+    top: 0;
+
+}
