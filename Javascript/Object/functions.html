@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- //this file contains the internal js script to demonstrate different functions in the js.
+    
+    //named function -->
+
+    <!-- named function -->
+    <script>
+        function name(a, b) {
+            console.log(a + b);
+        }
+        name(2, 4);
+
+        //function with expression
+
+        let sum = function (x, b) {
+            return x + b
+        }
+        console.log(sum(34, 34));
+
+        //function which is arrow function
+
+        let a = (x, y, z) => x * y * z;
+
+        console.log(a(2, 4, 5))
+
+        let b = () => console.log("Hello this is arrow function without any arguments to it ")
+        b();
+
+        //function IIFE
+
+        (function (msg) {
+            console.log(`Hello welcome to my ${msg}!`)
+        })
+            ("World");
+
+
+        //callback function
+
+        function operation(a, b, c, d) {
+            c(a, b)
+            d(a, b)
+        }
+        function sum1(a, b) {
+            console.log(a + b);
+        }
+        function mul(a, b) {
+            console.log(a * b)
+        }
+        operation(34, 50, sum1, mul);
+
+        //function inside a function
+        function count1() {
+            let count = 0;
+            function counter() {
+                count++;
+                console.log(count)
+            }
+            return counter;
+        }
+        let result = count1()
+        result()
+        result()
+        result()
+
+        //callback
+        function caller(callback1, callback2){
+            callback1()
+            callback2()
+        }
+        function greetGuest(){
+            console.log("Hello this is the business")
+        }
+        function greetOthers(){
+            console.log("Good bye when finished")
+        }
+        caller(greetGuest, greetOthers);
+
+        //parent and child methods/ functions
+
+        let age = 23;
+        function parent(){
+            let name = "heisenberg"
+            function child(){
+                console.log(name)
+                console.log(age)
+
+            }child()
+        }
+        parent()
+    </script>
+</body>
+
+</html>
