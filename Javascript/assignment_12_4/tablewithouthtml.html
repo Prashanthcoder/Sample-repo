@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            position: relative;
+            top: 200px;
+            left: 700px;
+        }
+
+        body>div {
+            height: 300px;
+            width: 400px;
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="username"> Username </label>
+    <input type="text" id="username">
+    <br><br>
+    <label for="pass">Password</label>
+    <input type="password" id="pass">
+    <button>login </button><br><br>
+    <div></div>
+    <script>
+        let name = document.querySelector('button');
+        name.addEventListener('click', () => {
+            let id = document.getElementById('username');
+            let passu = document.getElementById('pass');
+            let div = document.querySelector('div');
+            div.innerHTML = `username : ${id.value} <br> password : ${passu.value}`
+        })
+    </script>
+</body>
+
+</html>
