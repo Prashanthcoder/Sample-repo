@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("start")
+        // how to fetch the server data using Promise
+        fetch('https://cataas.com/api/cats?tags=cute').then(res => res.json()).then(data => console.log(data)).catch(err => `error dude to the network issue ${err}`)
+        console.log("end")
+        // guys tomorrow 20% promise topic is there tomorrow javascript subject over so 
+    </script>
+</body>
+
+</html>
