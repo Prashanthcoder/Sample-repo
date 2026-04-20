@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let pdata = new Promise((resolve, reject) => {
+            resolve("it is resolved")
+        })
+        pdata.then((a) => {
+            console.log(a);
+        })
+        console.log("start")
+        console.log("started")
+        console.log("end")
+
+        console.log("monday");
+        setTimout(() => {
+            console.log("wednesday");
+        }, 0);
+
+        let PData = new Promise((resolve, reject) => {
+            resolve("it is resolved")
+        })
+        PData.then((a) => {
+            console.log(a);
+        })
+
+        // overtalk something and say something dude open your fuckin mouth loud i'dont know much
+
+    </script>
+</body>
+
+</html>
+
+<!-- i'll take what guys ,  okay now see guys . handle instruction, error due to catch we can catch error guys take take guys, first  -->
