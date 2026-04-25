@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        h1 {
+            text-shadow: 5px 5px 5px gray;
+            text-align: center;
+        }
+
+        form {
+            border: 2px solid black;
+            border-radius: 25px;
+            width: 25vw;
+            background-color: beige;
+            padding: 10px;
+            box-shadow: 5px 5px 5px 5px gray;
+            margin-top: 100px;
+            margin-left: 600px;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        button {
+            border: 2px solid darkblue;
+            border-radius: 25px;
+            padding: 5px;
+        }
+        h2{
+            text-align: center;
+        }
+        table{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+             button{
+                background-color: blue;
+                color: white;
+                height:35px;
+                width: 100px;
+            padding: 7px;
+
+             }
+             button:hover{
+                transform: scale(1.1);
+             }
+    </style>
+</head>
+
+<body>
+    <h1>LOGIN </h1>
+    <form action="./index.html">
+        <h2>SignIn</h2>
+        <table cellspacing="10px">
+            <tr>
+                <td><label for="name">username</label></td>
+                <td><input type="text" placeholder="enter name.. " id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="uemail">Email</label></td>
+                <td><input type="email" placeholder="enter email.." id="uemail"></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile</label></td>
+                <td><input type="number" placeholder="enter mobile number" id="mobile"></td>
+            </tr>
+            <tr>
+                <td rowspan="1"><button>login</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
