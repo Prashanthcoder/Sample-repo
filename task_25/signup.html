@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        h1 {
+            text-shadow: 5px 5px 5px gray;
+            text-align: center;
+        }
+
+        form {
+            border: 2px solid black;
+            border-radius: 25px;
+            width: 25vw;
+            background-color: beige;
+            padding: 10px;
+            box-shadow: 5px 5px 5px 5px gray;
+            margin-top: 100px;
+            margin-left: 600px;
+        }
+        form:hover{
+            box-shadow: 2px 2px 2px 2px orange;
+            transform: scale(1.1);
+
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        button {
+            border: 2px solid darkblue;
+            border-radius: 25px;
+            padding: 5px;
+            height: 40px;
+            width: 100px;
+             box-shadow: 2px 2px 2px orange;
+        }
+        button:hover{
+            box-shadow: 2px 2px 2px darkred;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>USER REGISTRATION</h1>
+    <form action="./login.html">
+        <table cellspacing="10px">
+            <tr>
+                <td><label for="name">username</label></td>
+                <td><input type="text" placeholder="enter name.. " id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="uemail">Email</label></td>
+                <td><input type="email" placeholder="enter email.." id="uemail"></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile</label></td>
+                <td><input type="number" placeholder="enter mobile number" id="mobile"></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td><input type="password" placeholder="enter password" id="pass"></td>
+            </tr>
+            <tr>
+                <td><label for="cpass">Confirm password</label></td>
+                <td><input type="password" placeholder="confirm password" id="cpass"></td>
+            </tr>
+            <tr>
+                <td rowspan="1"><button>signup</button></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+
+    </script>
+</body>
+
+</html>
